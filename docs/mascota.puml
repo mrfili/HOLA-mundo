@@ -1,0 +1,57 @@
+@startuml Mascota 
+class Mascota 
+class Carne
+class Juguete 
+class Alimento
+class Pelota 
+class Perro 
+class Patas 
+class Colmillos
+class Parque 
+Class Hueso
+class Diversion
+class Felicidad
+class Emocion
+class Mordedor
+class Cariño
+class Limpieza
+class Jabon
+class Agua 
+class Tierra
+
+
+
+Alimento--o Mascota 
+Mascota o-- Juguete 
+Carne--|>Alimento
+Pelota--|> Juguete 
+Perro --|> Mascota
+Perro o-- Pelota
+Perro *-- Patas
+Perro *-- Colmillos
+Perro *--Emocion
+Felicidad --|> Emocion
+Perro o--Parque
+Perro o--Diversion
+Parque --|> Diversion
+Diversion --|>Felicidad
+Parque *-- Juguete
+Mordedor --|> Juguete
+Perro o-- Mordedor
+Perro o-- Cariño
+Cariño --|> Felicidad
+Hueso--o Perro
+Hueso --|>Juguete
+Hueso --* Perro 
+Limpieza --o Perro 
+Agua --o Perro
+Jabon <|--Limpieza
+Agua <|--Limpieza
+Perro--o Jabon
+Parque *-- Tierra
+
+
+
+
+
+@enduml 
